@@ -1,0 +1,27 @@
+---
+title: "Practice Github Assignment"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Load the packages
+
+Loading the R packages
+
+```{r}
+library(readxl)     # load readxl, for reading Excel files
+library(tidyverse)  # load tidyverse, for working with datasets
+
+```
+
+## Read the Data
+
+Reading data from excel file (included) and confirming it transferred
+
+```{r}
+finches <- read_excel("finches_data.xlsx")
+finches
+```
+
